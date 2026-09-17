@@ -2,6 +2,7 @@ mod support;
 
 mod auth_test;
 mod health_test;
+mod query_compile_test;
 mod query_route_test;
 mod query_schema_test;
 mod users_test;
