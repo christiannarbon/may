@@ -33,7 +33,7 @@ COPY --from=builder /app/target/release/may_pgwire /usr/local/bin/may_pgwire
 RUN useradd -m -u 10001 -U appuser && \
     chown -R appuser:appuser /app
 
-USER appuser
+USER 10001:10001
 
 # Expose PGWire Gateway port
 EXPOSE 5432
